@@ -31,9 +31,14 @@
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Usuario:"/>
+            android:text="Usuario:"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            />
 
         <EditText
             android:layout_width="match_parent"
@@ -42,13 +47,18 @@
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:inputType="textPersonName"
             />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Password:"
             android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             />
 
         <EditText
@@ -57,12 +67,14 @@
             android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"/>
+            android:layout_marginEnd="16dp"
+            android:inputType="textPassword"
+            />
     </LinearLayout>
 
 
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center"
@@ -72,11 +84,12 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:text="Login:"
-            android:layout_marginTop="16dp"
+            android:layout_centerInParent="true"
+            android:padding="8dp"
+
             />
-    </LinearLayout>
+    </RelativeLayout>
 
 
 </LinearLayout>
